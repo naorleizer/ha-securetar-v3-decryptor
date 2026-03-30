@@ -2,6 +2,8 @@
 
 A simple utility to decrypt and extract modern Home Assistant backups (SecureTar v3 format).
 
+> **Note:** This was swiftly vibe-coded and is provided as a reference only. Anyone is welcome to use, fork, and contribute!
+
 ## Why this exists?
 Starting in early 2026 (HA 2026.4), Home Assistant upgraded its backup encryption to use **libsodium secretstream (XChaCha20-Poly1305)** and **Argon2id** key derivation. Most existing "SecureTar" decryption scripts online only support the older AES-CBC format and will fail with "Invalid Magic Bytes" on newer backups.
 
